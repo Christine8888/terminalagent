@@ -197,8 +197,6 @@ def key_press_mac(key: str) -> (int, str, str):
             for k in reversed(mapped_keys):
                 pyautogui.keyUp(k)
             
-            print(mapped_keys)
-            
         return 0, "", ""
     except Exception as e:
         return 1, "", str(e)

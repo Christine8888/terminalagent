@@ -70,40 +70,7 @@ def main():
         23. Click the "OK" button in the bottom right corner.
         24. Click "Save" in the top right corner.
         """
-    # instructions = (
-    #     """
-    #     Ask the user any clarifying questions when needed. Check every step before proceeding.
-
-    #     Execute the following steps in the browser:
-    #     1. Click on the Payments Tab.
-    #     2. Click the "New Payment Request Button"
-    #     3. Click on "Student Reimbursement"
-    #     4. Switch back to the FX Reimbursements 24-25 Tab
-    #     5. Locate the @stanford.edu email in the form response. The username that comes before the @ is the SUNet ID. It should contain mostly letters.
-    #     6. Find the answer to "What FX project or team is this for?" and remember this as the project name
-    #     7. Scroll down a full screen using the space key. Click on the document uploaded under "Itemized receipt upload". This will open a new tab.
-    #     8. Download the document. This will open a new tab.
-    #     9. Switch back to the FX Reimbursements 24-25 Tab.
-    #     9. Click on the document uploaded under "Credit card or bank receipt upload". This will open a new tab.
-    #     10. Download the document. This will open a new tab.
-    #     11. Switch back to the FX Reimbursements 24-25 Tab.
-    #     12. Make note of the Vendor name and Description of purchase. 
-    #     13. Scroll down a full screen using the space key. Make note of the Total amount and Date of purchase. If you cannot see the total amount, scroll down more.
-    #     14. Navigate back to the Payment Details tab.
-    #     15. Fill in the Payee SUNet ID field with the SUNet ID you found in step 5.
-    #     16. Fill in the Summary Description with the Project Name and Description of purchase.
-    #     17. Double click on Document Date.
-    #     18. Navigate to the correct calendar date.
-    #     19. Click on Document Type.
-    #     20. Select "Receipt" as the Document Type.
-    #     21. Click the Paperclip icon.
-    #     22. Upload the 2 downloaded documents.
-    #     23. Click "OK" 
-    #     24. Click on and fill in the Vendor name field.
-    #     25. Click on and fill in the Amount field.
-    #     26. Click "Save" in the top right corner.
-    #     """
-    # )
+    
     run_agent_loop(fillout_instructions)
     run_agent_loop(fillout_instructions_2)
     run_agent_loop(document_instructions)

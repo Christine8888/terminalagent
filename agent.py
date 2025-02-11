@@ -172,8 +172,8 @@ def run_agent_loop(user_instructions: str) -> None:
         # user interaction
         if not tool_uses:
             final_text_parts = [block.text for block in msg_obj.content if block.type == "text"]
-            print("===== message from claude =====")
-            print("\n".join(final_text_parts))
+            print("===== question from claude =====")
+            # print("\n".join(final_text_parts))
 
             # ask user if they want to continue or exit
             user_input = input("\nYou: ").strip()
@@ -209,3 +209,10 @@ def run_agent_loop(user_instructions: str) -> None:
             "role": "user",
             "content": tool_result_blocks,
         })
+
+if __name__ == "__main__":
+    user_input = input("\nYou: ").strip()
+    if user_input.lower() in {"exit", "quit"}:
+        print("exiting the conversation.")
+    else:
+        run_agent_loop(user_input)

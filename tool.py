@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 
-import os
 import base64
 import shlex
-import shutil
-import httpx
 from pathlib import Path
 from typing import List, Optional, Dict, Any
 from uuid import uuid4
@@ -14,7 +11,6 @@ from PIL import Image
 import subprocess
 import time
 import pyautogui
-import yaml
 
 # anthropic import
 from anthropic import Anthropic, APIError

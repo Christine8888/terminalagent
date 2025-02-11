@@ -21,6 +21,8 @@ from anthropic.types.beta import (
 )
 
 VERBOSE = True
+# on my computer I have to adjust Claude's coordiantes?? to get the correct position
+OFFSET = 1.25
 
 def run_shell(cmd: str, timeout: float = 120.0) -> (int, str, str):
     if VERBOSE:
@@ -71,8 +73,8 @@ def screenshot_mac() -> Optional[str]:
 # mouse movement and click tools
 def mouse_move_mac(x: int, y: int) -> (int, str, str):
     # this is so stupid lmao
-    x = int(x * 1.25)
-    y = int(y * 1.25)
+    x = int(x * OFFSET)
+    y = int(y * OFFSET)
     cmd = f"cliclick m:{x},{y}"
     return run_shell(cmd)
 
